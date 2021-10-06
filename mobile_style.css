@@ -11,6 +11,10 @@ body {
     width: 100vw;
 }
 
+::-webkit-scrollbar {
+    display: none;
+}
+
 /* Fonts */
 
 h1, li {
@@ -50,6 +54,7 @@ main {
     width: 321px;
     border-radius: 20px;
     padding-bottom: 30px;
+    box-shadow: 1px 4px 9px -6px black;
 }
 
 img {
@@ -67,22 +72,35 @@ li {
     text-align: left;
     padding-bottom: 15px;
     padding-top: 15px;
+    width: 100px;
 }
 
 .QandA {
     border-bottom: solid 1px hsl(240, 5%, 91%);
+    width: 260px;
+}
+
+.question {
+    margin-right: 0;
+    width: 260px;
 }
 
 .question_flex {
+    display: flex;
+    /* justify-content: space-between; */
 }
 
 .answer {
     display: none;
+    width: 250px;
+    padding-right: 20px;
 }
 
-/* Need to fix this arrow */
-
 iframe {
-    height: 7px;
-    
+    height: 10px;
+    width: 10px;
+    padding-top: 20px;
+}
+svg {
+    margin-right: 0;
 }
