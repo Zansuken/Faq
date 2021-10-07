@@ -117,7 +117,7 @@ a {
 
 /* Checkbox button */
 
-#cb1 {
+#cb1, #cb2, #cb3, #cb4, #cb5 {
     appearance: none;
     width: 290px;
     height: 50px;
@@ -126,24 +126,37 @@ a {
     margin-left: 0;
 }
 
-.aflex {
-    transform: translateY(-95px);
-    opacity: 0;
+#aflex1, #aflex2, #aflex3, #aflex4, #aflex5 {
     width: 250px;
-    transition: transform 2s;
     z-index: 1;
 }
 
-#cb1:checked ~ .aflex {
+#cb1:checked ~ #aflex1 {
+    /* transform: translateY(-75px); */
+    opacity: 100;
+}
+
+#cb2:checked ~ #aflex2 {
     transform: translateY(-75px);
     opacity: 100;
 }
 
-#cb1:checked ~ #test {
-    color: red;
+#cb3:checked ~ #aflex3 {
+    transform: translateY(-75px);
+    opacity: 100;
 }
 
-.qflex p {
+#cb4:checked ~ #aflex4 {
+    transform: translateY(-75px);
+    opacity: 100;
+}
+
+#cb5:checked ~ #aflex5 {
+    transform: translateY(-75px);
+    opacity: 100;
+}
+
+#qP1, #qP2, #qP3, #qP4, #qP5 {
     height: 50px;
 }
 
