@@ -10,12 +10,19 @@ const turnBold1 = () => {
     }
 
     if (etat == true) {
-        document.getElementById("aflex1").style.transform = "translateY(-75px)"
+        document.getElementById("aP1").style.display = "flex"
+        document.getElementById("aflex1").style.transform = "translateY(-45px)"
         document.getElementById("aflex1").style.opacity = "100"
+        document.getElementById("aflex1").style.transition = "transform 2s, opacity 2s"
+        document.getElementById("aflex1").style.transitionDelay = "opacity 2s"
+
     } else {
+        document.getElementById("aP1").style.display = "none"
+        document.getElementById("aflex1").style.transitionDelay = "display 2s"
         document.getElementById("aflex1").style.transform = "translateY(-95px)"
         document.getElementById("aflex1").style.opacity = "0"
         document.getElementById("aflex1").style.transition = "transform 2s, opacity 2s"
+        document.getElementById("aflex1").style.transitionDelay = "opacity 2s"
     }
 
 }
@@ -36,7 +43,7 @@ const turnBold2 = () => {
     }
 
     if (etat == true) {
-        document.getElementById("aflex2").style.transform = "translateY(-75px)"
+        document.getElementById("aflex2").style.transform = "translateY(-45px)"
         document.getElementById("aflex2").style.opacity = "100"
     } else {
         document.getElementById("aflex2").style.transform = "translateY(-95px)"
@@ -62,7 +69,7 @@ const turnBold3 = () => {
     }
 
     if (etat == true) {
-        document.getElementById("aflex3").style.transform = "translateY(-75px)"
+        document.getElementById("aflex3").style.transform = "translateY(-45px)"
         document.getElementById("aflex3").style.opacity = "100"
     } else {
         document.getElementById("aflex3").style.transform = "translateY(-95px)"
@@ -88,7 +95,7 @@ const turnBold4 = () => {
     }
 
     if (etat == true) {
-        document.getElementById("aflex4").style.transform = "translateY(-75px)"
+        document.getElementById("aflex4").style.transform = "translateY(-45px)"
         document.getElementById("aflex4").style.opacity = "100"
     } else {
         document.getElementById("aflex4").style.transform = "translateY(-95px)"
@@ -114,7 +121,7 @@ const turnBold5 = () => {
     }
 
     if (etat == true) {
-        document.getElementById("aflex5").style.transform = "translateY(-75px)"
+        document.getElementById("aflex5").style.transform = "translateY(-45px)"
         document.getElementById("aflex5").style.opacity = "100"
     } else {
         document.getElementById("aflex5").style.transform = "translateY(-95px)"
