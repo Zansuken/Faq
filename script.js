@@ -8,10 +8,12 @@ for (let i = 0; i < questionsContainers.length; i++) {
         if (answersContainers[i].style.height == answersContainers[i].scrollHeight + "px") {
             answersContainers[i].style.height = "0px"
             questionsContainers[i].querySelector("h2").style.fontWeight = ""
+            questionsContainers[i].querySelector("img").style.transform = "rotate(0deg)"
         } else {
             answersContainers[i].style.height = "0px"
             answersContainers[i].style.height = answersContainers[i].scrollHeight + "px"
             questionsContainers[i].querySelector("h2").style.fontWeight = "bold"
+            questionsContainers[i].querySelector("img").style.transform = "rotate(180deg)"
         }
     })
 
